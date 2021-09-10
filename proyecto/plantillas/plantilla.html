@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <header>
+            <h1 style="color: blue;" >JAVA-PHP-PYTHON</h1>
+        </header>
+        <p><strong>{{titulo}}</strong></p>
+
+        <p><strong>Equipo #</strong> {{numero_equipo}}</p>
+
+        <p><strong>Integrantes: </strong></p>
+        <p>{%if lista_equipo%} 
+           {% for nombre in lista_equipo %}
+           
+           <p>  {{nombre}} </p>
+           
+           
+           {% endfor %}
+           {% else %}
+           <p>No hay elementos para mostrar</p>
+           {%endif%}                    </p>
+            
+            
+
+        </p>
+    </body>
+</html>
